@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="CRSProject"
+  id="myeclipse.1326963074332"
+  context-root="/CRSProject"
+  j2ee-spec="5.0"
+  archive="CRSProject.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

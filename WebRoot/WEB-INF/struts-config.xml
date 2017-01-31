@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources />
+  <form-beans >
+  	<form-bean name="logindata" type="com.Login.struts.UserLoginForm"></form-bean>
+  	<form-bean name="empdata" type="com.Employer.struts.EmployerLogin"></form-bean></form-beans>
+  <global-exceptions />
+  <global-forwards />
+  <action-mappings >
+  	<action path="/Userlogin" scope="request" type="com.Login.struts.UserLoginController" name="logindata">
+  		<forward name="search" path="/Search.jsp"></forward>
+  		<forward name="Userlogin" path="/Userlogin.jsp"></forward></action>
+  	<action path="/Employers" scope="request" type="com.Employer.struts.EmployerLoginController" name="empdata">
+  		<forward name="empupdates" path="/EmployersUpdates.jsp"></forward>
+  		<forward name="employers" path="/Employers.jsp"></forward></action></action-mappings>
+  <message-resources parameter="com.Login.struts.ApplicationResources" />
+</struts-config>
+
